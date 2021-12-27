@@ -599,7 +599,7 @@ int a=20;
 String b="john";
 int c=a;
 
-RHS can be child of LHS
+RHS can be CONCRETE child of LHS
 Parent p=new Child();
 
 Method call..
@@ -633,3 +633,146 @@ CompileTime Polymorphism = OVERLOADING
 Testing git uploads and downloads
 
 testing
+
+
+
+IIphone = 2006
+	call();
+	text();
+	browseInternet();
+	
+abstract IIphoneSample implements IIphone
+	call()
+		asdasdas
+	
+Iphone3 extends IIphoneSample
+	text()
+		fdsfdsf
+
+Iphone4 extends Iphone3
+	camera()
+		asdasd
+		
+Iphone6 extends Iphone4
+	fingerprintScan()
+		adssd
+
+IphoneX extends Iphone6
+	facialrecog()
+		asdadasd
+		
+FORWARD LOOKING changes
+Backward compatibility
+
+
+
+
+NON-ABSTRACT -
+
+TeslaS
+	gaming
+		qweqweqweqwe
+	build body
+		asdasdasd
+	digitalscreen
+		qqqqqqqqqqq
+	driving
+		dsfsdfdsfdsf
+	electricEngine
+		100 miles range
+Tesla3
+	gaming
+		qweqweqweqwe
+	build body
+		asdasdasd
+	digitalscreen
+		qqqqqqqqqqq
+	driving
+		dsfsdfdsfdsf
+	electricEngine
+		200 miles range
+TeslaX
+	gaming
+		qweqweqweqwe
+	build body
+		asdasdasd
+	digitalscreen
+		qqqqqqqqqqq
+	driving
+		dsfsdfdsfdsf
+	electricEngine
+		400 miles range
+TeslaY
+	gaming
+		qweqweqweqwe
+	build body
+		asdasdasd
+	digitalscreen
+		qqqqqqqqqqq
+	driving
+		dsfsdfdsfdsf
+	electricEngine
+		500 miles range
+		
+ABSTRACT IMPLEMENTAION		
+		
+AbstractTesla
+	build body
+		asdasdasd
+	digitalscreen
+		qqqqqqqqqqq
+	driving
+		dsfsdfdsfdsf
+	gaming
+		qweqweqweqwe
+	
+
+TeslaS extends AbstractTesla
+	electricEngine
+		100 miles range
+	
+Tesla3 extends AbstractTesla
+	electricEngine
+		200 miles range
+TeslaX extends AbstractTesla
+	electricEngine
+		400 miles range
+TeslaY extends AbstractTesla
+	electricEngine
+		500 miles range
+		
+		
+		
+		Abstract class = Generalization rule
+
+IPayment
+	collectCustomerName
+	collectShippingAddress
+	collectPayment
+
+AbstractPayment implement IPayment
+	collectCustomerName
+	collectShippingAddress
+
+PayPal extends AbstractPayment
+	collectPayment
+CreditCard extends AbstractPayment
+	collectPayment
+DebitCard extends AbstractPayment
+	collectPayment
+Bitcoin extends AbstractPayment
+	collectPayment
+
+
+*********************** Access Privilege
+
+	Package A = Parent, ChildA, OtherA
+	Package B = ChildB, OtherB
+
+
+
+
+
+
+
+
