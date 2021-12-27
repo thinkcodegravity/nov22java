@@ -1,0 +1,634 @@
+src - source code : text file with programs in human readable
+				format
+	extension = hello.java
+			||
+		COMPILER ( JDK )
+			||
+bin - binary code : binary code 1010 that machines can understand
+	extension = hello.class
+	
+Program :  
+	get Information/Data
+	instructions to process Data
+	
+EveryTHING and EveryPERSON 
+Object : laptop, fan, stone , BankCustomer, RetailCustomer,Person
+
+Object
+	Has : (attributes) Keyboard, mouse, screen
+	Does : (Activity) ON, OFF, Browse, video
+	
+Analyze
+
+Fan
+	Has : blades , motor , power button
+	Does : on, off, increase speed, decrease speed
+	
+	
+BankCustomer : name , address, contact , accountNumber, dob, balance,
+	deposit, withdraw, changePin, login, openAccount,changeContact
+
+	has : name, address, contact, accountNumber,dob,balance=100, pin=1234
+	does : 
+		deposit
+			50 $
+			update balance from 100 to 150
+		withdraw
+			10$
+			update balance from 150 to 140
+		
+
+public class BankCustomer{
+	int balance=100;
+	String name="john";
+	
+	public void withdraw(int withdrawAmount){
+		balance = balance - withdrawAmount;
+	}
+	
+	public void deposit(int depositAmount){
+		balance = balance + depositAmount;
+	}
+}
+
+		changePin,login, openAccount, changeContact
+	
+	has : information about the subject(BankCustomer)
+	does : instructions on how to process information of the subject(BankCustomer)
+
+
+Buyer
+	has : name, shippingAddress, contacct, creditCard
+	Does :  browse, add2Cart, returnOrder, cancelOrder,
+	payments, Updateaddress
+	
+Seller
+	has : name, companyName, reviews
+	does : postProducts, postPrice
+	
+Product
+	 information /data has : name, description, reviews, price, quantity
+	Does : buy, sell, giveDiscount		
+	
+	
+	
+Operating System
+
+Windows & Mac : development website software
+
+Unix : Launch website software on internet
+
+
+Buyer
+	has : name, shippingAddress, contacct, creditCard,activeStatus
+	
+	name = john (group of characters )
+	contact = 1231231231 (numbers)
+	creditCard = 1231231231231231
+	activeStatus = yes / no (yes/no info)
+	price = 99.99 (fraction data)
+	shippingAddress = complex
+		street
+		city
+		state
+		zip
+		country
+	
+	simple data/ primitive data
+		number = byte,short,int,long
+		fractional = double, float
+		yes/no = boolean
+		single character = char
+	
+	
+	
+	
+
+Seller
+	has : name, companyName, reviews
+	does : postProducts, postPrice
+	
+Product
+	 information /data has : name, description, reviews, price, quantity
+	Does : buy, sell, giveDiscount		
+		
+	
+	************** DATA TYPE SELECTION *********
+
+Seller
+	has : name, companyName, reviews
+		
+	name = 
+		single character ? char 
+		group of character ? String   (CORRECT)
+		number ? byte, short, int, long
+		fraction number ? float,double
+		yes/no ? boolean
+		complex ? CREATE ANOTHER PROGRAM
+		
+	String name;
+	String companyName;
+	
+	
+	
+	
+Variables :
+	What is Variable
+		container/holds information
+		something that changes : information stored in variable are bound to change
+	Data types
+	Data structure
+	Values 
+	Declaration rules
+	Initialization rules
+	Assignment rules
+	Rules on Data
+		Reading data
+		changing data
+	Scope of Data
+		Data that is part of you or defines you - global
+		Data that is provided to you by other - parameter
+		Data that u hold on temprory basis - local
+	Accessing Data
+		Within
+		
+		
+		
+BankAccount
+	has-a : balance
+	
+	public class bankaccount{
+		
+		long balance=0;
+	}
+	
+	
+Person
+	has-a : age
+	public class Person{
+		byte age=3;
+	}
+	
+	
+Product
+	has-a : price
+	
+	
+ *********** Declaration rules ***********
+	Declration line includes.... Data type followed by variable name
+	variable cannot be assigned with a value before declaration a data type
+	variable names : same program and same block
+		u cannot have 2 similar variable names
+		can contain alphabets, numbers, $, _
+		start with alphabet or $ or _ 
+		coding practice
+			naming convention - camelCase
+			choose a relevant meaningful names
+	
+	
+******** initialization rules ****
+	Value assigned to a variable for the FIRST time.
+	values should match the data type on LHS
+	RHS can be literal value or variable of same type
+	
+	
+	
+	
+	
+	
+	
+	********* Scope of Data ********* 
+		Data that is part of you or defines you - global
+		Data that is provided to you by other - parameter
+		Data that u hold on temprory basis - local
+		
+		
+	********* Accessing Data ********* 
+		same program : direct access 
+		outside program : accessed with reference to the program using dot operator
+
+
+
+
+
+
+Methods :
+	********* Method Declaration	*********
+		how to recognize methods : Does-A exercise
+		how to code methods :
+			What to name this activity ??? <<NAME>>
+			how many inputs are required ??? what are the data type of each inputs ???
+			how many outputs are required ??? what is the data type of each output ???
+		
+		PUBLIC 	OUTPUT 	NAME	(INPUT)
+	
+	
+		NAME : similar rules as variables
+			Follow camelCase format in method names
+			Alphabets , numbers, $, _ allowed in method names
+	
+		OUTPUT : CAN ALWAYS BE 0 or 1 
+			0 = void  ... 
+				public  void hello(String message)
+			1 = appropriate data type, int/boolean... 
+				public int add(int a, int b)
+			more than 1 = complex or multiple infor to return, create an object data type 
+				public Profile display(String userid)
+				
+		INPUT : CAN ALWAYS BE 0 or MORE 
+			0 = if no input require, leave it empty
+				public int bye(  )
+			More = if more than 1 input , separated by comma. data type followed by the name 
+				public int add(int number1, int number2)
+
+	********* Method Body - logic/ instructions ********* 
+	
+		LOGIC : use control flows and operators for logic.
+		
+		
+		RETURN STATEMENT :
+		
+			if void output - no return required
+			if anything but void - return required
+				primitive data type - 
+					literal value that matches output data type 
+						or 
+					variable that matches output data type 
+				Object /complex data type
+					variable that matches output data type 
+					
+					
+						
+						
+						
+						
+how to recognize methods : Does-A exercise
+		how to code methods :
+			What to name this activity ??? <<NAME>>
+			how many inputs are required ??? what are the data type of each inputs ???
+			how many outputs are required ??? what is the data type of each output ???
+		
+		PUBLIC 	OUTPUT 	NAME	(INPUT) parenthesis
+	
+Requirement gathering :
+Requirement analysis :
+design :
+development :
+
+
+
+BankCustomer : name , address, contact , accountNumber, dob, balance,
+	deposit, withdraw, changePin, login, openAccount,changeContact
+
+	has : name, address, contact, accountNumber,dob,balance=100, pin=1234
+	does :  METHODS 
+		deposit (method declration)
+			50 $ (method body)
+			update balance from 100 to 150
+		withdraw
+			10$
+			update balance from 150 to 140
+			
+			
+	
+			
+how to code methods :
+	What to name this activity/service/method ??? <<NAME>> additionService
+	how many inputs are required ??? what are the data type of each inputs ???
+		2numbers
+		number1 : int
+		number2 : int
+	how many outputs are required ??? what is the data type of each output ???
+		1result / 1output
+		output : int
+
+
+
+public	int	additionService		( int number1, int number2   )
+********************** IMPORTANT *****************
+input : parameters
+	0/none : leave it blank
+		public int getBankBalance(   )
+	1 : datatype variableName
+		public int withdraw(int amount)		
+	more : datatype variableName    , datatype variableName , datatype variableName .........
+Output : is mandatory and it can be only one
+	0/none : write void		
+	1 : datatype
+		public int getBankBalance(   )
+	More : ccreate complex object class with all the ouput declared.... Address
+		public  Address getAddressOfStore()
+
+calculate addition/multiplication/substraction/division for 2 numbers	
+		name =? calculateBasicMathOperation
+		input = how many ? names and data type of each ?  int number1, int number2
+		output = how many ? data type of each ?  4, int sum, int product, int sub, float div
+		
+public 	OUTPUT		NAME		(INPUT)
+********************** IMPORTANT *****************
+		principal X time X rate / 100
+
+public 	output	name		(input)
+public 	int 	squareSize	( int side   )
+public	int	rectangleSize	(  int length, int  breadth	)
+public 	float	circleSize	(	float radius)
+public 	float simpleInterest( int principal , int time, float rate)
+public 	MathResult 	calculateBasicMathOperation(int number1, int number2)
+	
+
+public class MathResult{
+	int sum;
+	int product;
+	int sub;
+	float div;
+}
+
+
+
+	***************** Method call Important ******************
+	
+	method call : programs communicate with each other through method calls.
+		parameters receive values from the callee program (Pass by value)							
+			callee				caller		
+			int a	will be 10			passed x whose value was 10		
+			int b	will be 20			passed y whose value was 20		
+			String c	will be john			passed p whose value was john		
+		If callee need primitive output							
+			 you can rerurn a  variable (sum) of same type or literal value						
+		If callee need complex/Object output							
+			 you can pass variable of same type
+
+	1) Pass input that match data type				x , y, p are int, int ,String as needed by callee program					
+		If callee need primitive input - you can pass variable of same type or literal value								
+		If callee need complex/Object input - you can pass variable of same type								
+	2) Pass input in the same order				pass same order int,int,String as needed by calling program					
+	3) pass equal amount of input				3 inputs are needed by add, caller program passes 3					
+	4) handle return type/output from caller program in same type									
+		add method returns "int"… Callee program stores output in "int" variable result								
+										
+	***************** Method call Important ******************
+	
+	
+	***************** operators ************
+	
+		= assignment operator
+		LHS RHS same data type
+		LHS ..... should always be variable
+		RHS .... literal value, new, variable, method call , expression
+		RHS if u have variable.... VALUE of RHS variable is assigned / overwritten on LHS variable
+		
+		arithemtic operators = numberd data type.. int long float etc
+		equality operator = ANY data type
+		
+		is 10 equal to 20 = NO
+		is 4.4 equal to 4.4 = YES
+		is 30 not equal to 40 = YES
+		is 30 not equal to 30 = NO
+		
+		
+		AND =	&&	
+		OR = 	||
+		
+		true AND true = true 
+		true AND false = false
+		false AND true = false
+		false AND false = false
+		
+		
+		true OR true = true 
+		true OR false = true
+		false OR true = true
+		false OR false = false
+		
+		LHS and RHS should be boolean
+		LHS and RHS can have = boolean literal value, boolean variable, 
+			expression that gives boolean output (relational and eqaulity operator)
+	
+	
+	multiple operators on same line
+	
+	
+	
+	1) brackets
+	2) * / %
+	3) + -
+	4) relational
+	5) equality
+	6) logical and or
+	multiple operator at same level ... left to right
+	
+	10 * 5 + ( 7 -1 * 4 ) - ( 3*2 + ( 4 + 5) ) > 12 && 15 > 1
+	10 * 5 + ( 7 - 4 ) - ( 3*2 + ( 4 + 5) ) > 12 && 15 > 1
+	10 * 5 + 3  - ( 3*2 + ( 4 + 5) ) > 12 && 15 > 1
+	10 * 5 + 3  - ( 3*2 + 9 ) > 12 && 15 > 1
+	10 * 5 + 3  - ( 6 + 9 ) > 12 && 15 > 1
+	10 * 5 + 3  - 15 > 12 && 15 > 1
+	50 + 3  - 15 > 12 && 15 > 1
+	53  - 15 > 12 && 15 > 1
+	38 > 12 && 15 > 1
+	true 	&& 15 > 1
+	true 	&& true
+	true
+	
+	if(userid == "john" && password == "john1!" && userid != "hacker" )
+	
+	
+	
+	
+		
+		
+	***************** operators ************
+	
+	***************** control flows ************
+	
+	if - 1 condition to follow
+	if-else - Either/Or logic
+	if-elseif-elseif-else - multiple choice
+	
+	else should always follow by if
+	No code should be written  between if-block and else
+	if or else should not end with semi colon
+	else is optional
+	else has no conditions - default block
+	
+	
+	Loops
+	FOR =	Fixed loop
+	While =	0 or more loops
+	Do while = 1 or more loops
+	
+	Infinite loop
+	for(int i=0; i > -1 ; i++){
+		sysout("hi");
+	}
+	
+	I - Initialiaztion ,	int i=0
+	C - Condition check , 	i <5
+	M - Modification,	i++
+	E - Execution 		sysout("hi");
+	
+	ICE =	i=0		false		print hi
+	MCE =	i=1		true		print hi
+	MCE =	i=2		true		print hi
+	MCE =	i=3		true		print hi
+	MCE =	i=4		true		print hi
+	MCE =	i=5		false
+	MCE =
+	
+	
+	
+	Continue : Skips current loop, not execute any more lines in the current loop
+	Break : Exit entire loop
+	
+	
+	for(int i=0; i < 3 ; i++){
+		sysout(hi);
+		if(i==1)
+			continue;
+		sysout(hello);
+	}
+	
+	ICE =	i=0		true		print hi	print hello
+	MCE =	i=1		true		print hi 
+	MCE =	i=2		true		print hi	print hello
+	MCE =	i=3		false
+	
+	
+	
+	
+	for(int i=0; i < 3 ; i++){
+		sysout(hi);
+		if(i==1)
+			break;
+		sysout(hello);
+	}
+	
+	
+	ICE =	i=0		true		print hi	print hello
+	MCE =	i=1		true		print hi
+	MCE =	
+	MCE =	
+	
+	WHILE - 0 or more
+	
+	boolean status=false;
+	while(status){
+		sysout(hi);
+	}
+	
+	Do-WHILE - 1 or more
+	
+	boolean status=false;
+	do{
+		sysout(hi);
+	}while(status);
+	
+	************ multiple choice ********
+	switch 	: comparing direct literal value of primitive or string
+		break statement should be writtern for all cases
+	if-else if	: everything else
+	
+	
+	if( userid=="john" && pwd="john1!")
+		aasdad
+	else if( email=="john@g.com" && pwd="john1!")
+		aasdad
+	else if( phone==123 && pwd="john1!")
+		aasdad
+	else if( secretPin=123456)
+		aasdad
+		
+	// use switch-case is requirement like below...
+	int option =3;
+	if(option ==1)
+		System.out.println("deposit");
+	else	if(option ==2)
+		System.out.println("withdraw");
+	else	if(option ==3)
+		System.out.println("check bal");
+	else	if(option ==4)
+		System.out.println("exit");
+	
+	int option =3;
+	switch (option) {
+		case 1:
+			System.out.println("deposit");
+			break;
+		case 2:
+			System.out.println("withdraw");
+			break;
+		case 3:
+			System.out.println("check balance");
+			break;
+		default:
+			System.out.println("exit");
+			break;
+	}
+	
+	
+************ constructor ***********
+everything and every person created are created with some unique features.
+However by default every java objects created have the same content....
+	To fix this issue we have constructor
+	
+Constructor is called when new object is created in memory using "new" operator
+Constructor main purpose is to initialize custom values during object creation process
+
+
+********** inheritnace **********
+
+sub class = child program
+super class = parent program
+
+extends key word for inheriting other programs
+
+Multiple inheritnace not allowed 
+Multi-level inheritance is allowed
+
+Child constructor cannot execute before parent consturctor
+	super() is added by compliler 
+	super() should be the first line in all sub/child class constructor
+	Parent program without default constructor requires child/sub class to
+	add super constructor call with matching input.
+	
+	
+NEW RULE FOR ASSIGNNMENT OPERATOR
+
+LHS = RHS
+int a=20;
+String b="john";
+int c=a;
+
+RHS can be child of LHS
+Parent p=new Child();
+
+Method call..
+	If a method requires input as X.... in method call u can pass any variable of
+	type X...... OR any variable that is child of X
+
+
+Runtime Polymorphism = OVERRIDING
+	Actual output/method call is resolved in runtime 
+	(it is based on actual object "new" in runtime)
+	ONLY happens between parent/super and child/sub class
+		Access_privilege	Return_type	Method_name(input)
+		1) Access privilege - same or more broader access than parent		
+			private < default < protected < public
+			parent = default ..... Child = default/protected/public
+		2) Return type=
+			same a parent or child data type
+			public Iphone test() // parent
+			public Iphone12 test() // child
+		3) Name of the method SHOULD be SAME 
+		4) Input SHOULD be SAME
+		
+CompileTime Polymorphism = OVERLOADING
+	Can resolve method call during compile time.
+	It can happen in same class or in parent/child class
+		1) Name of the method SHOULD be SAME
+		2) Input SHOULD be DIFFERNT
+	
+	
+	
+Testing git uploads and downloads
+
