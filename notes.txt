@@ -770,9 +770,92 @@ Bitcoin extends AbstractPayment
 	Package B = ChildB, OtherB
 
 
+com.amazon.login
+	register.java
+	changePassword.java
+	abc.java
+com.amazon.shopping
+	browse.java
+	add2Cart.java
 
 
 
+public (EVERYONE)
+protected (same package + related other package)
+default/package (same package)
+private (NO OUTSIDERS)
 
 
+***************** static ************
+
+declare variable as static if an information(global variable) has the same value across all
+	references
+delcare method a static if it does not refer instance variable in the program
+	(static methods are served as Utility in an application)
+
+Bank
+	balance
+	
+	withdraw(){
+		Utility.sub(balance, withdrawAmount);
+	}
+	deposit()
+	chckBalance()
+	
+Accountant
+	taxes
+	
+	fileTaxes()
+	caluclateIncome(){
+		Utility.mul(salary , 12);
+	}
+	
+Utility
+	static add()
+	static sub()
+	static mul()
+	
+	
+*************** final **************
+
+final variable = cannot Change value
+final method = cannot Override (Polymorphism)
+final class = cannot inherit (Inheritance)
+
+public final class Calculator{
+	public  int add(int a,int b){
+		int sum=a+b;
+		return sum;
+	}
+	public  int sub(int a,int b){
+		int sum=a-b;
+		return sum;
+	}
+	public  int mul(int a,int b){
+		int sum=a*b;
+		return sum;
+	}
+	public  int div(int a,int b){
+		int sum=a/b;
+		return sum;
+	}
+}
+
+********************* exception handling *****************
+
+1) customer : 
+	Upon program failure/crash, rather than tech error message provide easy to understand 
+	error message to customers
+	diffferent error message for each failures
+		ATM
+			card in corrupted/damaged
+			card is expired
+			wrong atm pin
+			insufficient fund in account
+			
+		Sorry for the inconvinience
+			
+2) developer :
+	you can pin point exact program name, method name, line number
+	also reason for failure
 
