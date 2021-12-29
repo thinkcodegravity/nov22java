@@ -942,15 +942,23 @@ User defined exception
 
 *********************** String ****************
 
+String s1="iphone";
+String s2="iphone";
+String s3="samsung";
+String s4=new String("iphone");
+String s5="iphone";
+String s6=new String("iphone");
 
 
+in pool = iphone samsung
+outside pool = iphone iphone
 
 
+String phone="(123)-12-12345";
+String phone="1231212345";
+String phone="123-12-12345";
+String phone="123 12 12345";
 
-	
+phone.replaceAll("(" ,"").replaceAll(")","").replaceAll(" ",""),replaceAll("-","");
+1231212345
 
-
-	
-	
-	
-		
