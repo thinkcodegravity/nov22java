@@ -1,4 +1,4 @@
 
 public class Amazon {
-	Buyer customer=new Buyer();
+	public Buyer customer=new Buyer();
 }
