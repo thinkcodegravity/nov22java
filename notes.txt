@@ -961,4 +961,73 @@ String phone="123 12 12345";
 
 phone.replaceAll("(" ,"").replaceAll(")","").replaceAll(" ",""),replaceAll("-","");
 1231212345
+phone.substring( 0,4);
 
+
+
+customer name = john doe
+
+String userid=" john";
+String userid="john ";
+userid=userid.trim();
+
+
+xvcb
+
+
+
+**************** collection *****************
+
+Arraylist : 
+	dynamic size
+	indexed
+	faster for reading
+		
+Vector :
+	dynamic size
+	indexed
+	synchronized / thread safe.
+	
+Linked List :
+	dynamic size
+	indexed
+	fastest for editing
+		
+HashSet
+	Unique
+	Unordered
+	
+LinkedHashSet
+	Unique
+	Ordered
+	
+TreeSet
+	Unique
+	Sorted
+	
+LinkedList<String> al=new LinkedList<String>();
+ArrayList<String> al=new ArrayList<String>();
+Vector<String> al=new Vector<String>();
+	
+HashSet<String> s1=new HashSet<String>();
+LinkedHashSet<String> s2=new LinkedHashSet<String>();
+TreeSet<String> s3=new TreeSet<String>();
+	
+	
+	al.add("john");
+	s1.remove("john");
+	
+	
+List > ArrayList, LinkedList,Vector
+
+Set > HashSet,TreeSet
+	       > LinkedHashSet
+	       
+	       
+	       
+	       
+	       
+	       
+
+	
+	
