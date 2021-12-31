@@ -14,7 +14,7 @@ public class CollectionsTest {
 		System.out.println(s3);
 		System.out.println("*************");
 		
-		HashSet<String> al=new TreeSet<String>();
+		List<String> al=new Vector<String>();
 		 al.add("john");
 		 al.add("jane");
 		 al.add("john");

@@ -1024,10 +1024,27 @@ Set > HashSet,TreeSet
 	       > LinkedHashSet
 	       
 	       
-	       
-	       
-	       
-	       
+*********** important ***********	       
+If a set or map is being used for user-defined data type , the user defined program should override
+equals and hashcode method.
 
+If a user-defined data type is stored in treeSet or key section of treemap
+user defined program needs to implement comparable interface
+
+
+*********** important ***********	       
+in-built programs	- String, System,
+user-defined programs - programmer created classes
+
+
+MAPS
+	hashmap = unordered, fastest
+	linkedhashmap = ordered
+	treemap = sorted
+	hashtable = synchronized, thread safe
+	
+	
+	
+	
 	
 	
